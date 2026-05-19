@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tehelka 007 - Join Now</title>
+    <title>Tehelka 007 - Join Our Telegram Channel</title>
     
     <!-- Meta Pixel Code -->
     <script>
@@ -13,39 +13,36 @@
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js';
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1696674527993587');
     fbq('track', 'PageView');
     </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1696674527993587&v=news&ev=PageView"/>
-    </noscript>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1696674527993587&ev=PageView&noscript=1"
+    /></noscript>
     <!-- End Meta Pixel Code -->
 
     <style>
-        /* Basic Reset & Styling */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif, Arial;
         }
 
         body {
-            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
             color: #ffffff;
-            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: 100vh;
+            text-align: center;
             padding: 20px;
-            overflow: hidden;
         }
 
-        /* Container Card */
         .container {
-            text-align: center;
             max-width: 500px;
             width: 100%;
             background: rgba(255, 255, 255, 0.03);
@@ -56,66 +53,79 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
-        /* Headline Style */
-        .headline {
-            font-size: 3rem;
-            font-weight: 900;
+        .badge {
+            background: linear-gradient(135deg, #ff9900 0%, #ff5500 100%);
+            color: #fff;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 20px;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-            background: linear-gradient(45deg, #ff0055, #00ffcc);
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(255, 85, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0px 0px 20px rgba(0, 255, 204, 0.2);
+            letter-spacing: 1px;
         }
 
-        .subheadline {
-            font-size: 1.1rem;
+        p {
+            font-size: 16px;
             color: #94a3b8;
-            margin-bottom: 40px;
-            font-weight: 500;
+            margin-bottom: 35px;
+            line-height: 1.6;
         }
 
-        /* Blinking Telegram Button */
-        .tg-button {
-            display: inline-block;
+        .btn-telegram {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
             width: 100%;
-            padding: 16px 32px;
-            font-size: 1.3rem;
-            font-weight: 700;
+            padding: 18px 30px;
+            background: linear-gradient(135deg, #229ED9 0%, #0088cc 100%);
             color: #ffffff;
-            background-color: #0088cc;
             text-decoration: none;
-            border-radius: 50px;
-            transition: transform 0.2s ease;
-            box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7);
-            animation: pulse-blink 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 14px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.4);
+            animation: zoomInOut 2s ease-in-out infinite;
         }
 
-        .tg-button:hover {
-            transform: scale(1.02);
+        .btn-telegram:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(0, 136, 204, 0.6);
         }
 
-        /* Blinking/Glowing Animation */
-        @keyframes pulse-blink {
-            0% {
+        .btn-telegram svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* Attention Grabber Zooming Effect for Button */
+        @keyframes zoomInOut {
+            0%, 100% {
                 transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7);
             }
-            70% {
+            50% {
                 transform: scale(1.03);
-                box-shadow: 0 0 0 25px rgba(0, 136, 204, 0);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
             }
         }
 
-        /* Small Footer Text */
         .footer-text {
             margin-top: 25px;
-            font-size: 0.85rem;
+            font-size: 12px;
             color: #64748b;
         }
     </style>
@@ -123,16 +133,27 @@
 <body>
 
     <div class="container">
-        <!-- Headline -->
-        <h1 class="headline">Tehelka 007</h1>
-        <p class="subheadline">Join Our Exclusive Telegram Channel Today</p>
-
-        <!-- Blinking Telegram Button -->
-        <a href="https://t.me/tehelka007" class="tg-button">
+        <!-- Badge Info -->
+        <span class="badge">Official Channel</span>
+        
+        <!-- Main Headline -->
+        <h1>Tehelka 007</h1>
+        
+        <!-- Sub-headline / Description -->
+        <p>Sabse tez aur sateek updates ke liye abhi hamare official Telegram channel ko join karein.</p>
+        
+        <!-- Telegram Button -->
+        <a href="https://t.me/tehelka007" class="btn-telegram" target="_blank">
+            <!-- Telegram Icon -->
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-1-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
             Join Telegram Channel
         </a>
 
-        <p class="footer-text">Official Channel • Secured Connection</p>
+        <div class="footer-text">
+            ⚡ Click above to get instant access
+        </div>
     </div>
 
 </body>
